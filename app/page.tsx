@@ -1,103 +1,58 @@
-import Image from "next/image";
+import { Jumbotron, H1 } from "@/app/common/typography";
+import { Button } from "@/app/common/buttons";
+
+import Hero from "./assets/hero.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className='relative w-full py-80 bg-cover bg-[75%]' style={{ backgroundImage: `url(${Hero.src})` }}>
+        <div className='absolute inset-0 bg-black/50' />
+        <div className='relative container'>
+          <Jumbotron className='text-white text-center'>
+            Crafted moments, <br /> one cup at a time.
+          </Jumbotron>
+          <H1 className='mt-4 text-white text-center'>
+            Discover your perfect roast <br className='lg:hidden' /> at Luna Cafe
+          </H1>
+          <p className='text-center mt-8'>
+            <Button color='secondary' size='large' href='#'>
+              Discover Our Menu
+            </Button>
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section>
+        <div className='container text-justify'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore vitae provident, asperiores neque officiis sed dicta laudantium voluptatibus magni
+          itaque eum vero amet quas esse repellendus veritatis unde nesciunt eveniet, autem hic! Obcaecati repudiandae earum perferendis ut ducimus cum
+          corrupti, alias fuga autem dolorem impedit ipsam nesciunt natus reprehenderit consectetur voluptates veniam, soluta libero incidunt veritatis?
+          Doloremque reiciendis doloribus ad nesciunt praesentium voluptatem libero corrupti minima quos ipsam. Officia, in quas. Dolorum deleniti ratione
+          repellendus optio dicta repellat a neque explicabo? Culpa earum iste harum recusandae debitis amet aliquam exercitationem ipsum doloribus commodi,
+          architecto, tempora unde. Consectetur, nulla adipisci! Vero aspernatur minus dolor provident? At id assumenda saepe? Laborum esse placeat sint nulla
+          quam culpa facilis saepe veniam mollitia ipsum. Ipsa praesentium unde asperiores, enim animi mollitia molestias facilis quo cum voluptate id dolorem
+          aut aliquid deserunt rerum corrupti odio rem, ex atque eveniet ratione inventore. Ab quod alias ea officiis facilis odit reiciendis ducimus quaerat
+          voluptatem? Accusantium, ex, laudantium minus ut enim amet quaerat at laborum blanditiis illo necessitatibus consectetur. Asperiores veritatis
+          repellat ipsa, consequuntur numquam quo esse odio animi eligendi laborum et nostrum dolores molestias nesciunt laudantium tempora ipsam officiis sed?
+          Velit, veritatis modi necessitatibus provident et, doloremque excepturi, rerum laudantium non praesentium repellat aspernatur nihil dolores corrupti
+          magnam quod unde reiciendis culpa. Omnis, voluptates, possimus eius similique corrupti, consequuntur exercitationem voluptatum pariatur illo aut
+          aperiam ducimus. Minus odit exercitationem dignissimos! Laudantium numquam nam voluptas iste ratione, recusandae, voluptates excepturi sint possimus
+          repudiandae ipsum, dolores accusantium officiis dolor nisi sapiente ea distinctio! Eum deleniti accusamus ipsum, iure non voluptatem nobis possimus
+          expedita praesentium blanditiis tempore dolor. Velit recusandae eligendi dicta minus, consequatur sed officia quia. At quas hic, repudiandae
+          voluptates officiis delectus exercitationem sit quaerat, esse molestias corrupti blanditiis, iste iure ad. Doloremque at ab adipisci officiis beatae
+          eveniet quisquam inventore ipsa itaque dolorem repellat magni dolores aspernatur labore alias a quis quibusdam ad placeat laborum, amet similique,
+          odit perspiciatis quam? Odit quod qui corrupti, quas excepturi unde dolorum perspiciatis, quasi inventore error tenetur voluptate voluptatem sint!
+          Omnis, qui illum consectetur quaerat adipisci, quidem voluptatibus doloribus incidunt hic ad beatae consequatur, perspiciatis quos enim. Enim mollitia
+          amet impedit nisi harum? Dolor asperiores ullam voluptas perferendis quasi? Error necessitatibus, iste beatae fuga molestias ex eligendi nostrum
+          labore saepe tenetur nam distinctio quo. Fugiat nam, minima officiis, voluptatibus provident temporibus modi nemo sint voluptas id eius odio, quas
+          odit nobis veniam optio officia doloribus error. Hic fugiat natus nemo ab atque aut distinctio, tenetur, nam inventore delectus beatae dolorum maiores
+          ad facilis ipsa architecto in nobis nesciunt tempora. Nihil deserunt molestiae ipsa ipsam, voluptatum laborum, repudiandae nulla et quidem, maxime
+          dignissimos. Ab iste officiis hic ex nulla, consectetur corporis repellat facere. Sunt repudiandae in earum quidem, ipsum aliquam itaque, possimus
+          omnis officiis, id delectus a labore rem! Consectetur qui numquam labore quaerat repellat sunt dicta modi facere temporibus veniam, cumque at
+          voluptates iusto quidem quo dolor sapiente odio quod. Laudantium tempora facere vero consequuntur laborum omnis ratione sint cumque id?
+        </div>
+      </section>
+    </>
   );
 }
